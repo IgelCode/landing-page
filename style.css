@@ -110,24 +110,21 @@ footer {
 
 .linkbilder {
     display: flex;
-    justify-content: space-between;
-    align-items:stretch;
+    justify-content: space-around;
     padding: 150px;
     gap: 50px;
     
             }
 .text {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .linkimg img {
     max-height: 200px;
     border-radius: 20%;
     object-fit: cover;
-    
-    
-        }
+            }
 
 .action {
     display: flex;
