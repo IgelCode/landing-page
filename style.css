@@ -14,11 +14,12 @@ header {
     
         }
     .logo {
-    margin-left: 5%;
-    margin-top: 10px;
+    margin-left: 130px;
+    margin-top: 20px;
           }
     .links {
-    margin-right: 5%;
+    margin-top: 10px;
+    margin-right: 130px;
           }
 
 .main {
@@ -33,7 +34,7 @@ a {
 ul {
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 .banner {
     background-color: #1F2937;
