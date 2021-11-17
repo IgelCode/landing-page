@@ -5,19 +5,19 @@
 }
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #1F2937;
     font-size: 24px;
     
         }
     .logo {
-    margin-left: 130px;
+    
     margin-top: 20px;
           }
     .links {
     margin-top: 10px;
-    margin-right: 130px;
+    
           }
 
 .main {
@@ -38,7 +38,7 @@ ul {
     background-color: #1F2937;
     color: #e5e7eb;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items:flex-start;
     flex-direction: row;
     padding: 100px;
@@ -48,9 +48,12 @@ ul {
     .linkeseite {
         display: flex;
         flex-direction: column;
-        margin-right: 20%;
+       
         gap: 50px;
             }
+    .rechteseite {
+        display: flex;
+    }
     .banner img {
     width: 400px;
             }
