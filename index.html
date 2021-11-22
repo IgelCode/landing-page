@@ -18,24 +18,30 @@
     </ul>
 </div>
     </header>
+
+    <!--Banner Abschnitt -->
 <div class="main">
 <div class="banner">
     <div class="linkeseite">
         <p id="bigtext">Beste Landingpage EUW!</p>
-        <p>Untertext für bigtext. Sieht doch gar nicht so übel aus für einen ersten Versuch. </p>
+        <p>Untertext für bigtext. Sieht doch gar nicht so übel aus für einen 
+            ersten Versuch. </p>
         <button style="border: 0;">Klick mich</button>
     </div>
     <div class="rechteseite">
     <img src="images/banner.jpg" alt="Banner">
     </div>
     </div>
-
+    
+<!-- Script zur Passwortabfrage-->
     
     <div style="text-align: center;">
         <h1>Teste deine Hacking-Skills!</h1>
         <br>
       <button style="width:150px;" onclick="passwort()">Passwortabfrage</button>
-      <p><br>Kannst du 1337-HaXx0R dieses Passwort knacken und dein Leben retten? Oder wirst du von String-Emil gnadenlos aufgebohrt? Du hast nur einen Versuch!</p>
+      <p><br>Kannst du 1337-HaXx0R dieses Passwort knacken und dein Leben retten?
+         Oder wirst du von String-Emil gnadenlos aufgebohrt? 
+         Du hast nur einen Versuch!</p>
     </div>
     
     <script>
@@ -46,6 +52,7 @@
         if (pass === "TheMaster") {
             alert("Glückwunsch du hast es geschafft!");
             window.open("https://memegenerator.net/img/instances/72660883.jpg" , "_self" , "width=500, height=450");
+            
         }
         else if (userName === null || userName === "") {
             alert("Du hast versagt!");
@@ -69,7 +76,50 @@
 
     </script>
 
+<hr>
 
+<!--Selectbox Abschnitt -->
+<div class="select">
+    <label for="bezeichnung">Gib mir deine Sahne du süßer...</label> 
+    <select id="bezeichnung">
+        <option value="">Wähle deine Bezeichnung</option>
+        <option value="hurensohn">...Hurensohn</option>
+        <option value="programmiergott">...Programmiergott</option>
+        <option value="tier">..."tier"</option>
+    </select>
+    <p class="penis"></p>
+
+    <script>
+        const select = document.querySelector("select");
+        const penis = document.querySelector(".penis");
+
+        select.addEventListener("change", setBezeichnung);
+
+        function setBezeichnung() {
+            const choice = select.value;
+
+            switch (choice)
+            {
+                case "hurensohn":
+                    penis.textContent = "Hurensohn";
+                    break;
+                case "programmiergott":
+                    penis.textContent = "Programmiergott";
+                    break;
+                case "tier": 
+                    penis.textContent = "...tier";
+                    break;
+                default: 
+                    penis.textContent = "";
+            }
+        }
+
+    </script>
+
+</div>
+
+<!--Linkbilder Abschnitt -->
+<hr>
 
 <h1>Hier beginnen die Linkbilder</h1>
 <div class="linkbilder">
@@ -91,11 +141,16 @@
 </div>
 </div>
 
+<!--Quote Abschnitt -->
 
 <div class="quote">
-<p>Übelst langer Quote Lorem <br> IpsumLorem  IpsumLorem  IpsumLorem  IpsumLorem <br>  IpsumLorem IpsumLorem IpsumLorem Ipsum<br>Lorem IpsumLorem IpsumLorem IpsumLorem Ipsum.
+<p>Übelst langer Quote Lorem <br> IpsumLorem  IpsumLorem  IpsumLorem  IpsumLorem <br>  
+    IpsumLorem IpsumLorem IpsumLorem Ipsum<br>Lorem IpsumLorem IpsumLorem 
+    IpsumLorem Ipsum.
 <p class="philo"> -Krasser Philosoph</p>
 </div>
+
+<!--Action Abschnitt -->
 
 <div class="action">
     <div class="call">
@@ -110,13 +165,13 @@
 
 </div>
 </div>
+
+<!--Footer Abschnitt -->
+
 <footer>
     <p>Copyright © <a target="_blank" href="https://www.theodinproject.com/">
         The Odin Project</a><br>In conjunction with IgelCode</p>
 </footer>
-
-
-
 
 </body>
 </html>
