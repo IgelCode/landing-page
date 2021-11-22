@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-     
+
     <header>
 <img class="logo" src="images/logo.png" alt="Logo">
 <div class="links">
@@ -29,6 +29,46 @@
     <img src="images/banner.jpg" alt="Banner">
     </div>
     </div>
+
+    
+    <div style="text-align: center;">
+        <h1>Teste deine Hacking-Skills!</h1>
+        <br>
+      <button style="width:150px;" onclick="passwort()">Passwortabfrage</button>
+      <p><br>Kannst du 1337-HaXx0R dieses Passwort knacken und dein Leben retten? Oder wirst du von String-Emil gnadenlos aufgebohrt? Du hast nur einen Versuch!</p>
+    </div>
+    
+    <script>
+        function passwort(){
+        let userName = prompt("Wer ist da?");
+    if (userName === "Admin") {
+    let pass = prompt("Password?");
+        if (pass === "TheMaster") {
+            alert("Glückwunsch du hast es geschafft!");
+            window.open("https://memegenerator.net/img/instances/72660883.jpg" , "_self" , "width=500, height=450");
+        }
+        else if (userName === null || userName === "") {
+            alert("Du hast versagt!");
+            window.location.href = "http://www.string-emil.de/Seiten/Heimarbeit/string-emil_0096.jpg";
+    
+        }
+        else {
+        alert("Du armer, armer Tropf...");
+        window.location.href = "http://www.string-emil.de/Seiten/Heimarbeit/string-emil_0096.jpg";
+    }
+}
+    else if (userName === "" || userName === null) {
+    alert("Du hast versagt!");
+    window.location.href = "http://www.string-emil.de/Seiten/Heimarbeit/string-emil_0096.jpg";
+    }
+    else {
+    alert("Du armer, armer Tropf...");
+    window.location.href = "http://www.string-emil.de/Seiten/Heimarbeit/string-emil_0096.jpg";
+    }
+        }
+
+    </script>
+
 
 
 <h1>Hier beginnen die Linkbilder</h1>
@@ -74,6 +114,10 @@
     <p>Copyright © <a target="_blank" href="https://www.theodinproject.com/">
         The Odin Project</a><br>In conjunction with IgelCode</p>
 </footer>
+
+
+
+
 </body>
 </html>
 
