@@ -89,16 +89,13 @@ hr {
     align-self: center;
     margin: 40px;
     border-radius: 50%;
-   
+   }
 
-}
-
-select{
+select {
     width: 200px;
     text-align:center;
     align-self: center;
-    
-}
+    }
 
 .select {
     margin-top: 50px;
