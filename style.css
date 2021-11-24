@@ -60,7 +60,9 @@ ul {
     }
     .banner img {
     width: 400px;
-            }
+    border-radius: 20%;
+    
+}
 button {
     width: 100px;
     height: 50px;
